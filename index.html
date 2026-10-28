@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Венера — салон красоты в Барнауле, Ленина 92</title>
+  <meta name="description" content="Салон красоты «Венера» в Барнауле: маникюр, педикюр, брови, ресницы и макияж. Проспект Ленина, 92. Онлайн-запись.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__in">
+      <a href="#top" class="logo logo--img"><img src="img/salon.jpg" alt="Логотип салона Венера" width="46" height="46"><span>ВЕНЕРА<small>салон красоты</small></span></a>
+      <nav class="nav" id="nav">
+        <a href="#top">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#gallery">Маникюр</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <button class="btn btn--dark header__cta" type="button" data-book>Записаться <span>→</span></button>
+      <button class="burger" id="burger" type="button" aria-label="Меню"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Первый экран -->
+    <section class="hero">
+      <img class="hero__img" src="img/hero.jpg" alt="Аккуратный маникюр">
+      <div class="container hero__in">
+        <p class="kicker">Барнаул, проспект Ленина, 92</p>
+        <h1>Уверенность<br>в каждом <em>жесте</em></h1>
+        <p class="hero__lead">Маникюр и педикюр, брови и ресницы, макияж - в одном салоне в центре города. Запишитесь онлайн: выберите мастера и удобное время.</p>
+        <div class="hero__row">
+          <button class="btn btn--dark" type="button" data-book>Записаться онлайн <span>→</span></button>
+          <a class="play" href="tel:+79619982348"><i>☏</i> +7 961 998-23-48</a>
+        </div>
+        <ul class="perks">
+          <li><b>4,9 в 2ГИС</b><span>68 отзывов</span></li>
+          <li><b>Каждый день</b><span>с 10:00 до 20:00</span></li>
+          <li><b>Центр города</b><span>проспект Ленина, 92</span></li>
+          <li><b>Онлайн-запись</b><span>мастер и время за минуту</span></li>
+        </ul>
+      </div>
+      <p class="note note--hero">Красивые ногти -<br>хорошее настроение ♡</p>
+    </section>
+
+    <!-- Услуги -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Наши услуги</p>
+            <h2>Всё для красоты в одном месте</h2>
+          </div>
+          <a href="#prices" class="link-arrow">Цены →</a>
+        </div>
+        <div class="services" id="services-list"></div>
+      </div>
+    </section>
+
+    <!-- Почему к нам - из отзывов клиентов -->
+    <section class="why">
+      <img class="why__img" src="img/studio.jpg" alt="Маникюр в салоне">
+      <div class="why__text">
+        <p class="kicker">За что нас ценят</p>
+        <h2>Так пишут наши клиенты</h2>
+        <div class="why__grid">
+          <div><b>Не торопят</b><p>Мастер спокойно работает и помогает подобрать цвет и втирку.</p></div>
+          <div><b>Аккуратно и быстро</b><p>«Все аккуратно, чисто, быстро» - из отзыва в 2ГИС.</p></div>
+          <div><b>Всё в одном месте</b><p>Маникюр, педикюр, брови, ресницы и макияж - без поиска разных мастеров.</p></div>
+          <div><b>В центре города</b><p>Проспект Ленина, 92 - удобно заехать до или после работы.</p></div>
+        </div>
+        <button class="btn btn--rose" type="button" data-book>Записаться <span>→</span></button>
+        <p class="note note--why">Забота о себе<br>вам к лицу</p>
+      </div>
+    </section>
+
+    <!-- Цены -->
+    <section class="section" id="prices">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Прайс</p>
+            <h2>Брови и ресницы</h2>
+          </div>
+          <div class="tabs" id="price-tabs" role="tablist"></div>
+        </div>
+        <div class="prices" id="price-list"></div>
+        <p class="prices__note">Цены на маникюр, педикюр и макияж уточняйте при записи.</p>
+      </div>
+    </section>
+
+    <!-- Маникюр: идеи (заменить на фото работ салона) -->
+    <section class="section section--soft" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Маникюр</p>
+            <h2>Идеи для маникюра</h2>
+          </div>
+          <div class="tabs" id="gallery-tabs"></div>
+        </div>
+        <div class="gallery" id="gallery-list"></div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Отзывы из 2ГИС</p>
+            <h2>4,9 из 5 - 68 отзывов</h2>
+          </div>
+          <div class="arrows">
+            <button type="button" id="rev-prev" aria-label="Предыдущий отзыв">←</button>
+            <button type="button" id="rev-next" aria-label="Следующий отзыв">→</button>
+          </div>
+        </div>
+        <div class="reviews" id="reviews-list"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__grid">
+      <div>
+        <a href="#top" class="logo logo--img"><img src="img/salon.jpg" alt="Логотип салона Венера" width="46" height="46"><span>ВЕНЕРА<small>салон красоты</small></span></a>
+        <p class="footer__slogan">Ухоженные руки. Выразительный взгляд.</p>
+        <button class="btn btn--dark" type="button" data-book>Записаться онлайн <span>→</span></button>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="#top">Главная</a><a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#gallery">Маникюр</a><a href="#reviews">Отзывы</a>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <div id="footer-services"></div>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>Барнаул, проспект Ленина, 92</p>
+        <a href="tel:+79619982348">+7 961 998-23-48</a>
+        <a href="https://wa.me/79619982348" target="_blank" rel="noopener">WhatsApp</a>
+        <p>Каждый день: 10:00-20:00</p>
+        <a href="https://2gis.ru/barnaul/firm/70000001100023986" target="_blank" rel="noopener">Открыть в 2ГИС →</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>Демо-версия сайта · <a href="https://lestermun.ru" target="_blank" rel="noopener">lestermun.ru</a></span>
+      <a href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <!-- Окно услуги -->
+  <div class="modal" id="service-modal" aria-hidden="true">
+    <div class="modal__box modal__box--service">
+      <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+      <img id="sm-img" src="" alt="">
+      <div class="modal__body">
+        <p class="kicker" id="sm-time"></p>
+        <h3 id="sm-title"></h3>
+        <p id="sm-text"></p>
+        <ul id="sm-list" class="checks"></ul>
+        <div class="sm-foot">
+          <b id="sm-price"></b>
+          <button class="btn btn--dark" type="button" id="sm-book">Записаться онлайн <span>→</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Просмотр фото -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" type="button" data-close aria-label="Закрыть">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" id="lb-prev" aria-label="Назад">←</button>
+    <figure><img id="lb-img" src="" alt=""><figcaption id="lb-cap"></figcaption></figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" id="lb-next" aria-label="Вперёд">→</button>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
